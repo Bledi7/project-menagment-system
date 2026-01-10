@@ -1,0 +1,25 @@
+@media screen and (max-width:700px) {
+    #user-profile-container {
+        flex-direction: column !important;
+    }
+
+    #elementary-info {
+        width: 90%;
+
+    }
+    #secondary-info {
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    #social-network-info {
+        width: 90%;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+    #skills{
+        width: 90%;
+        margin-top: 3%;
+    }
+
+}
