@@ -1,0 +1,39 @@
+.background-svg {
+  background-image: url("../../Atoms/images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.welcome-text {
+  margin: 0 1rem 3rem 3rem;
+  text-align: center;
+}
+
+.starlabs-text {
+  font-weight: bold;
+  color: rgb(246, 32, 6);
+}
+
+@media (max-width: 600px) {
+  .background-svg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-text {
+    margin: 0 5rem 2rem 2rem;
+    text-align: center;
+  }
+
+  .welcome-form {
+    margin: 0 5rem 2rem 2rem;
+    max-width: 100%;
+  }
+}
