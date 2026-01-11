@@ -1,0 +1,153 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15rem;
+  padding-top: 20px;
+  background-color: #fbfbfb;
+}
+.nav h3 {
+  font-size: 1.2rem;
+  color: #0cbaa6;
+  text-transform: lowercase;
+}
+.nav h3::first-letter {
+  font-size: 1.3rem;
+  color: #0cbaa6;
+  text-transform: uppercase;
+}
+
+input {
+  border: none;
+  background-color: #eee;
+  padding-right: 10px;
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+}
+
+.input {
+  border: 0px solid gray;
+  background-color: #eee;
+  padding: 5px;
+  color: gray;
+  border-radius: 7px;
+  width: 35%;
+}
+
+.icon i {
+  padding-left: 10px;
+  color: rgb(162, 156, 156);
+  cursor: pointer;
+}
+
+.personUser {
+  display: flex;
+  align-items: center;
+  line-height: 5px;
+  padding-right: 20px;
+}
+
+.personUser h3 {
+  font-size: 1rem;
+  padding-left: 10px;
+}
+.personUser p {
+  font-size: 0.7rem;
+  padding-left: 10px;
+  color: rgb(162, 156, 156);
+}
+.nav img {
+  height: 2.5rem;
+  border-radius: 30px;
+}
+
+.menu-user {
+  display: flex;
+  align-items: center;
+  margin-left: 15rem;
+  padding-top: 20px;
+}
+
+.menu-user button {
+  width: 8%;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #0cbaa6;
+  color: white;
+}
+
+.menu-bar {
+  display: flex;
+  width: 85%;
+  margin-left: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-links ul {
+  display: flex;
+}
+
+.first-links li {
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+}
+.first-links li a.active {
+  color: black;
+}
+.first-links li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgb(162, 156, 156);
+  transition: 0.3s ease-in-out;
+  align-items: center;
+}
+.first-links a:hover {
+  color: #0cbaa6;
+}
+.first-links a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #0cbaa6;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+.menu-end ul {
+  display: flex;
+}
+
+.menu-end li {
+  list-style: none;
+  position: relative;
+}
+
+.menu-end li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgb(162, 156, 156);
+  transition: 0.3s ease-in-out;
+}
+.menu-end a:hover {
+  color: #0cbaa6;
+}
+.menu-end a:hover::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #0cbaa6;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+.menu-end i {
+  font-size: 0.9rem;
+  color: gray;
+  padding-left: 15px;
+  padding-right: 10px;
+  cursor: pointer;
+}

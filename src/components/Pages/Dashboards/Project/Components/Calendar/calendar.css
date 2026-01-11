@@ -1,0 +1,27 @@
+.calendarContainer {
+  background-color: white;
+
+  padding: 10px;
+  border-radius: 3px;
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendarData {
+  width: 200px !important;
+}
+/* .css-cwhad8-MuiDateCalendar-root {
+  width: inherit !important;
+} */
+.css-wnk5bx-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: #1f6e8c !important;
+}
+
+.css-cwhad8-MuiDateCalendar-root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.css-9reuh9-MuiPickersArrowSwitcher-root {
+  flex-wrap: wrap;
+}

@@ -1,0 +1,9 @@
+.css-1s2fmpl-MuiLinearProgress-root {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 4px;
+    z-index: 0;
+    background-color: rgb(204 207 211);
+    width: 100%;
+}

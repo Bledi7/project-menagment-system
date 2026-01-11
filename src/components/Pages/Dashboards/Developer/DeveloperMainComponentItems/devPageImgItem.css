@@ -1,0 +1,44 @@
+.wrapper {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0px 0px 12px 5px #e9e8e8;
+  position: relative;
+}
+.projectImg {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 /0.75;
+  border-radius: 10px;
+}
+.viewAll {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.156);
+  border-radius: 10px;
+  padding: 7px;
+}
+
+@media (max-width: 999px) {
+  .imgGrid {
+    gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .test1 {
+    padding-top: 8px !important;
+  }
+}
+@media (max-width: 599px) {
+  .wrapper {
+    padding: 8px;
+  }
+}
