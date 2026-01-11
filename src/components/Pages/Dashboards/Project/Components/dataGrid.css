@@ -1,0 +1,16 @@
+.css-1lymaxv-MuiDataGrid-root {
+  border: none !important;
+  border-radius: 3px !important;
+}
+.gridCont {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 12px 5px #e9e8e8 !important;
+  border-radius: 3px !important;
+  height: 320px !important;
+}
+.gridCont h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}

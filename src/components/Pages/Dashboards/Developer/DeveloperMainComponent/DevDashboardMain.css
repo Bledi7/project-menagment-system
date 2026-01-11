@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.devDashboardWrapper {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.main-grid-container {
+  width: 100%;
+}
+.third-grid-container {
+  height: auto;
+}
+@media (max-width: 899px) {
+  .devDashboardWrapper {
+    padding: 50px 16px;
+  }
+}
