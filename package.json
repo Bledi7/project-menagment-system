@@ -1,0 +1,11 @@
+{
+  "name": "projects-management-monorepo",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix projects-management-frontend && npm install --prefix projects-management-backend",
+    "dev": "concurrently \"npm run dev --prefix projects-management-frontend\" \"npm run start --prefix projects-management-backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

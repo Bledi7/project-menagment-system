@@ -1,0 +1,25 @@
+#viewMore-button {
+  background-color: #2E8A99;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  text-transform: none;
+}
+#viewMore-button:hover {
+  background-color: #2E8A99;
+}
+.viewMoreIcon {
+  display: none;
+}
+@media (max-width: 699px) {
+  #viewMore-button {
+    font-size: 0;
+    padding: 5px;
+  }
+  .viewMoreIcon {
+    display: block;
+  }
+}

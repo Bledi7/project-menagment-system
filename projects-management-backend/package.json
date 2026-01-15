@@ -1,0 +1,54 @@
+{
+
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "serve": "node index.js",
+
+    "dev": "nodemon index.js"
+
+  },
+
+  "dependencies": {
+
+    "@mapbox/node-pre-gyp": "^1.0.10",
+
+    "axios": "^1.4.0",
+
+    "bcrypt": "^5.1.0",
+
+    "cors": "^2.8.5",
+
+    "dotenv": "^16.3.1",
+
+    "express": "^4.18.2",
+
+    "firebase-admin": "^11.9.0",
+
+    "fs": "^0.0.1-security",
+
+    "jsonwebtoken": "^9.0.1",
+
+    "mongoose": "^6.2.6",
+
+    "multer": "^1.4.5-lts.1",
+
+    "nodemailer": "^6.9.4",
+
+    "nodemailer-smtp-transport": "^2.7.4",
+
+    "nodemon": "^2.0.22",
+
+    "npmlog": "^7.0.1",
+
+    "sib-api-v3-sdk": "^8.5.0",
+
+    "socket.io": "^4.7.1",
+
+    "socket.io-client": "^4.7.1"
+
+  }
+
+}
+
