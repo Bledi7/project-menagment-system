@@ -1,67 +1,29 @@
-html,
-body,
-#root,
-.app,
-.content {
-  height: 100%;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  background: #f9f9f9;
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-}
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
 
-.app {
-  display: flex;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.content {
-  flex: 1;
-  overflow-y: auto;
-}
-
-.app.sidebar-open .content {
-  transition: margin-left 0.3s ease;
-}
-
-.app.sidebar-closed .content {
-  transition: margin-left 0.3s ease;
-}
-
-.app.sidebar-open .content,
-.app.sidebar-closed .content {
-  margin-left: 240px;
-}
-
-/* ScrollBar properties */
-body::-webkit-scrollbar {
-  background-color: #fff;
-  width: 16px;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #fff;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #babac0;
-  border-radius: 16px;
-  border: 4px solid #fff;
-}
-
-body::-webkit-scrollbar-button {
-  display: none;
-}
-
-/* Media queries */
-
-@media (max-width: 768px) {
-  .app.sidebar-closed .sidebar {
-    display: none;
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-gray-700;
   }
+  
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
+}
 
-  .app.sidebar-closed .content {
-    margin-left: 0;
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }

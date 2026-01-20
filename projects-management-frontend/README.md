@@ -1,36 +1,89 @@
-# Project Management System
-The project is built with Vite React. To clone and run the project, follow the instructions:
+# Project Management System - Frontend
 
-- Clone the project:
-<b>git clone https://github.com/andinamani5/projects-management-frontend</b>
+Modern TypeScript React frontend for the Project Management System.
 
-- To install node modules:
-<b>npm install</b> or <b>yarn install</b>
+## Tech Stack
 
-- To start the project:
-<b>npm run dev</b> 
+- **React 18** with TypeScript
+- **Vite** for build tooling
+- **Zustand** for state management
+- **TanStack Query** for data fetching
+- **TailwindCSS** for styling
+- **React Hook Form + Zod** for forms and validation
+- **React Router** for routing
+- **Socket.io Client** for real-time features
+- **Recharts** for data visualization
 
-- To open in a browser:
-press CTRL + Click to <b> http://localhost:3000/</b>
+## Setup
 
-- Also check the dependencies added in package.json and install them
-<hr>
-<b>Disa dokumentime se si mund te duket pjesa e frontit te projektit:</b>
+1. Install dependencies:
+```bash
+npm install --legacy-peer-deps
+```
 
-- regjistrimi i userave ku userat kane mundsi me kriju accounts
+2. Create a `.env` file in the root directory:
+```env
+VITE_API_URL=http://localhost:2000/api
+VITE_SOCKET_URL=ws://localhost:2000
+```
 
-- krijimi dhe menaxhimi i projekteve - userat me pas mundsi me kriju projekte, me vendos detaje per projektet, menaxhu projektet etj, e kjo noshta ma shume per userat e menaxhmentit jo developerave
+**Note**: The backend runs on port 2000 by default. Socket.io runs on the same port as the HTTP server.
 
-- menaxhimi i detyrave - ktu mundet me pas ni funksionalitet per menaxhimin e tasks brenda projekteve, assign tasks te devsat, me bo track progresin, me i vendos deadlines etj
+3. Start the development server:
+```bash
+npm run dev
+```
 
-- planifikimi edhe percjellja e sprintave - ktu me vendos diqka qe i planifikon dhe i bon track sprintat brenda projekteve, pse jo edhe me vendos useri goals e te ngjashme
+4. Build for production:
+```bash
+npm run build
+```
 
-- ni pike tjeter qe mundet me u vendos eshte bashkpunimi mes developerave, ku developerat munden me bashpunu me komuniku, komentu, share files etj.
+## Project Structure
 
-- vizualizimi i te dhenave me tabela grafe etj te projektit edhe sprintave qe userat ne kete rast menaxhmenti me pas te lehte me pa dhe me kuptu progresin e projektit, dhenien e taskut ose te ngjashem qe mundet me u vendos ndoshta ne fillim. Perveq ksaj mundemi me vendos edhe real-time updates ose notifications qe userat me pas mundsi ne kohe reale me pa te rejat rreth projektit, ndryshimet edhe krejt senet.
+- `src/api/` - API services and query keys
+- `src/components/` - Reusable UI components
+- `src/hooks/` - Custom React hooks
+- `src/pages/` - Page components
+- `src/routes/` - React Router configuration
+- `src/store/` - Zustand stores
+- `src/sockets/` - Socket.io hooks
+- `src/types/` - TypeScript type definitions
+- `src/utils/` - Utility functions
 
-- Disa prej roleve qe mundemi me i vendos ne sistem munden me qene Admini qe ka full access ose osht si owner, Project manager, developer, team member(ky ndoshta per me pas qasje ma te vogel se developeri vetem sa me i pa informacionet rreth projektit, tasts edhe updates)
-Edhe API prej Jira ne kete rast mundemi me ja integru nese mundemi me lidh me Jira Project Management API qe ish aty.
+## Features
 
-- Radhitjen e navigimit ne sistem ose menut mundemi mi vendos si te zakonshme si me Dashboard, Projects, Tasks, Sprints, Reports, Profile, Help, Logout. Mundemi me vendos ndoshta edhe notifications, search etj.
+- ✅ Full TypeScript support
+- ✅ Role-based authentication and routing
+- ✅ Real-time updates via Socket.io
+- ✅ Dark mode support
+- ✅ Responsive design
+- ✅ Form validation
+- ✅ Error handling and loading states
+- ✅ Toast notifications
 
+## User Roles
+
+- **Admin** - Full system access
+- **Product Owner** - Project management
+- **Scrum Master** - Team and sprint management
+- **Developer** - Task and report management
+
+## Development
+
+Run type checking:
+```bash
+npm run type-check
+```
+
+Run linter:
+```bash
+npm run lint
+```
+
+## Notes
+
+- All API calls are typed and use TanStack Query
+- State management uses Zustand with persistence for auth
+- Dark mode preference is saved in localStorage
+- Socket.io connection is established on user login
